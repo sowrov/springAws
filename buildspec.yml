@@ -4,13 +4,10 @@ phases:
   install:
     runtime-versions:
       java: corretto8
-    commands:
-    - echo installing maven...
-    - apt-get update -y
-    - apt-get install -y maven
   build:
     commands:
     - echo building the SpringAws
+    - java -version
     - mvn install
 artifacts:
   files:
